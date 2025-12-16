@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Minimal Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="index">
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <div class="name">Minimal Store</div>
+        <div class="sub">Original designs • fulfilled by Printify</div>
+      </div>
+      <div class="pill">Free shipping note goes here</div>
+    </div>
+
+    <div class="hero">
+      <h1>Clean designs. Simple checkout.</h1>
+      <p>Pick a product, hit buy, and checkout opens in a secure payment page (Stripe/PayPal). Then Printify fulfills.</p>
+    </div>
+
+    <div id="grid" class="grid"></div>
+
+    <div class="footer">
+      <div>© <span id="year"></span> Minimal Store</div>
+      <div>Contact: your@email.com</div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
